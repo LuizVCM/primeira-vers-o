@@ -1,0 +1,176 @@
+.uno{
+margin-top:10px;
+margin-left:10px;
+width:330px;
+height:200px;
+background-color:black;
+border:transparent;
+border-radius:20px;
+color:white;
+}
+body{
+    background-image: url(https://giffiles.alphacoders.com/105/105408.gif);
+    background-size: cover;
+   background-repeat: no-repeat;
+    background-position:center;
+    text-align:center;
+    align-items:center;
+    align-content:center;
+    justify-content:center;
+    display:flex;
+    flex-direction:column;
+   filter:contrast(300%);
+   overflow: hidden;
+   width:900px;
+   height:750px;
+   
+   
+
+}
+.titulo{
+   
+    align-items:center;
+    justify-content:center;
+    align-content:center;
+    text-align:center;
+    font-family: "Mountains of Christmas", serif;
+  font-weight: 700;
+  font-style: normal;
+  
+  margin-top:60px;
+  color:white;
+  background:radial-gradient(circle at center, rgba(0, 0, 255, 0.721), #0000009f, rgb(255, 0, 0));
+ border:none;
+ box-shadow:0 90px 90px rgb(0, 0, 0);
+  width:500px;
+  height:400px;
+  
+  margin-bottom:100px;
+  border-radius:300px;
+  -webkit-text-stroke: 1px #000;
+  box-direction: underline;
+  filter:blur(1px);
+  
+  
+  
+
+
+  
+}
+p{
+    font-size:90px;
+}
+
+.play{
+  width:265px;
+  height:90px;
+  text-align:center;
+  align-items:center;
+  justify-content:center;
+  background-color:rgba(255, 191, 0, 0.737);
+  border-radius:50px;
+  
+  box-shadow:0 90px 60px black;
+  border: 1px dotted red;
+}
+.rodape{
+  font-size:20px;
+  margin-bottom:200px;
+  color:white;
+  text-align:center;
+  width:1200px;
+padding:30px;
+
+}
+.h{
+  margin-bottom:200px;
+  
+}
+.play:hover{
+  animation: play 0.5s forwards;
+}
+@keyframes play {
+  0%{
+    width:265px;
+  height:90px;
+  text-align:center;
+  align-items:center;
+  justify-content:center;
+  background-color:rgba(255, 191, 0, 0.737);
+  border-radius:50px;
+  
+  box-shadow:0 90px 60px black;
+  border: 1px dotted red;
+
+  }
+  100%{
+    transform:scale(1.1);
+    text-shadow: 0 0 20px white;
+    background-color:rgb(14, 14, 148);
+    border: 2px solid rgb(2, 18, 54);
+    box-shadow:inset 0 1px 60px black;
+    color:white;
+
+  }
+  
+}
+.menu button{
+  display:none;
+  
+  margin-top: 70px;
+  margin-right:330px;
+  margin-left:330px;
+  margin-bottom:110px;
+  width:500px;
+  height:400px;
+  background-color:white;
+ 
+ 
+}
+.w{
+  margin-left:600px;
+  margin-top:400px;
+  justify-content:center;
+  align-items:center;
+  align-content:center;
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  width:max-content;
+  height:max-content;
+  box-shadow:indet 0 0 80px rgb(218, 0, 0);
+}
+
+.titulo:hover {
+  animation: borda 5s infinite;}
+
+@keyframes borda {
+  0%{
+    border-color:4px solid rgba(198, 175, 0, 0.5);
+  }
+  25%{
+    border-color: 4px solid rgba(198, 175, 0, 0.8);
+    
+  
+  }
+  50%{
+    border-color:4px solid rgba(198, 175, 0, 1);
+   
+  }
+  75%{
+    border-color: 4px solid rgba(198, 175, 0, 0.8);
+  
+  }
+  100%{
+    border-color: 4px solid rgba(198, 175, 0, 0.5);
+  
+  }
+}
+
+  
+  audio{
+width:50px;
+height:30px;
+opacity: 0.0;
+  }
+

@@ -1,0 +1,252 @@
+body{
+    background:radial-gradient( #fff, #52baff,blue ,rgb(1, 37, 94),rgb(44, 1, 31), #000000); /*impor propriedade de gradient(degradê) em um fundo. "to right = para direita"*/
+    display:flex; /* display é a forma de como os itens vão se organizar (no caso serão flexíveis)*/
+    flex-direction:column;/*direção desse display, no caso, todos os itens serão organizados em forma de "coluna"*/
+    justify-content: center; /*justificativa do conteúdo para o centro*/
+    align-items:center;/* alinhamento dos itens internos para o centro*/
+    align-content:center;/*alinhamento dos conteúdos para o centro*/
+    text-align:center;/*alinhamento de textos internos para o centro*/
+    background-color:transparent;/*cor de fundo*/
+    background-position:50% 50%;
+    background-size:cover;
+    overflow: hidden;
+    filter:contrast(100%);
+    border:1px white; /*borda do item (tamanho de 1 pixel branco) */
+}
+.down{
+    padding:50px;/*preenchimento interno*/
+    width:50px;/*largura do item*/
+    height:50px;/*altura do item*/
+   
+
+}
+.one{
+    background-color:rgb(0, 235, 4);
+    padding:40px;
+    width:110px;
+    height:90px;
+    box-shadow: 0 0 50px  white ;
+    filter:saturate(200%);
+    transition:scale() 0.5s;/*transição, uma propriedade usada para definir um evento no CSS. No caso é uma escala que tem 0.5 segundos para que aconteça 100%*/
+    border-radius:30px;
+
+}
+.one:hover{ /*sub-classe onde "hover" é a propriedade que usamos quando o cursos passa em cima do item, podendo animar, trocar cor, etc. mas só vale quando for em cima*/
+    border: 2px solid white;
+    box-shadow:inset 1px 1px 0 #fff, inset 2px 2px 0 #000; /*esse é uma propriedade usada para designar sombras. No caso é a sombra da caixa*/
+}
+
+ 
+
+.one:hover{
+    animation: efeito 0.6s forwards, efeitp-reverso 0.6s forwards 0.6s;/*anteriormente, após definir o tempo que se completa 100% tal evento. aqui foi definido a propriedade de realizar uma animação dentro de 0.6 segundos, que foi nomeado com "efeito"*/
+   /* box-shadow:0 0 30px rgba(0, 0, 0, 0.674);*/
+    border-radius: 30px;/*essa é a propriedade de arredondamento da borda*/
+
+}
+@keyframes efeito { /*aqui pegamos o elemento da animação anterior "efeito"*/
+    0%{ /*quando esse efeito não é ativado*/
+        transform: scale(1);/*a escala inicial é igual a 1*/
+        border-radius: 0;/*a borda arredondada não existe inicialmente*/
+        background-color:#ffffff73;/*a cor de fundo inicial é essa*/
+        box-shadow: 0 0 0;/*sem sombra inicial*/
+    }
+    100%{/*quando ativada...*/
+        transform: scale(1.2);/* a escala final é de 1.2*/
+        border-radius:50px;/*a borda arredondada final é de 50 pixel*/
+        background-color:#ffffffb6;/*a cor de fundo muda para esta*/
+        box-shadow: 0 0 35px rgba(0, 0, 0, 0.712);/*agora temos uma sombra na parte final*/
+    }/*lembrando que tudo isso é realizado apenas dentro do tempo que foi definido anteriormente. No caso so vai completar 100% depois de 0.6 segundos*/
+    
+}
+
+
+input{
+    background-color:#ffffff;
+}
+p{
+    text-shadow:yellow;
+}
+input:hover{
+   /* animation: efeitos 0.6s forwards;*/
+    cursor:pointer;
+    background-image:linear-gradient(to left,#fff 50%, #59ffbd 60%, #61fff4 70%, #52c0ff 80%, #0099ff 90%);
+    background-size:200% 100%;
+    animation: animacao 1s forwards;
+    color:#000;
+
+}
+@keyframes animacao{
+    0%{
+        background-position: 100% 0;
+        transition: scale(1);
+        box-shadow:0 0 0  rgba(0, 0, 0, 0.285);
+
+    }
+    100%{
+        background-position: 0% 0;
+        transition:scale(2);
+        box-shadow:12px 10px 5px rgba(0, 0, 0, 0.285);
+    }
+} 
+.escondido{
+   width:700px;
+   height:200px;
+   background-color:#000000;
+   color:white;
+   padding:100px;
+   position:fixed;
+  
+   border:none;
+   border-radius: 20px;
+   margin-top:100px;
+   margin-bottom:100px;
+   margin-left:330px;
+   margin-right:330px;
+   overflow: hidden;
+   overflow-y:auto;
+   
+  
+   box-shadow:0 0 80px black;
+   text-align:left;
+
+}
+.escondido::-webkit-scrollbar{
+    display:none;
+}
+.um{
+    border-bottom:5px solid white;
+    border-radius:5px;
+    box-shadow:  0 2px  0 0 rgb(83, 78, 78);
+    
+}
+.d{
+   text-decoration: underline;;
+}
+.saida{
+        text-align:center;
+        align-items:center;
+        justify-content:center;
+        align-content:center;
+}
+#m{
+   padding:30px;
+    color:black;
+    background-color:white;
+    text-shadow:0 0 12px 15px white;
+    text-align:center;
+    border-radius:30px;
+    border: 1px solid gold;
+    overflow: hidden;
+    overflow-x: auto;
+    font-size:20px;
+
+}
+#m:hover{
+    animation: desenho 0.5s forwards;
+}
+@keyframes desenho {
+    0%{
+        color:black;
+        background-color:white;
+        border:1px solid gold;
+        text-shadow: 0 0 12px 15px white;
+        box-shadow:none;
+    }
+    100%{
+        color:rgb(107, 23, 23);
+        background-color:black;
+        border: 2px solid red;
+        box-shadow:0 5px 12px 10px red;
+        text-shadow: 0 0 12px 15px red;
+    }
+}
+
+
+
+.certeza{
+    position:fixed;
+    margin-top:100px;
+    margin-bottom:100px;
+    margin-left:330px;
+    margin-right:330px;
+    display:none;
+    border:2px double red;
+    padding:40px;
+    font-size:50px;
+    color:white;
+    background-color:black;
+    flex-direction:column;
+    text-align:center;
+    align-items:center;
+    justify-content:center;
+    align-content:center;
+    width:1300px;
+    height:800px;
+   
+
+}
+.botoes{
+    display:flex;
+    flex-direction:row;
+}
+#voltar:hover, #continuar:hover{
+       box-shadow: 0 0 0 1px red;
+       cursor:pointer;
+}
+
+.star1{
+    width:5px;
+    height:5px;
+    border:none;
+    border-radius:100%;
+    box-shadow:0 0 60px white;
+    position:fixed;
+    margin: 60px 580px 30px 30px;
+    background-color:white;
+    animation: star1 3s infinite;
+    filter: blur(2px);
+}
+@keyframes star1 {
+    0%{
+        opacity:0;
+    }
+    33%{
+        opacity:0.8;
+       
+    
+    }
+    66%{
+     opacity:0;
+    }
+    99%{
+        opacity:0.8;
+    }
+}
+.parte-baixo{
+    width:1800px;
+    height:400px;
+    background:radial-gradient(rgba(255, 255, 255, 0.365), rgba(0, 0, 0, 0.705), rgba(128, 128, 128, 0.705));
+    position:fixed;
+    margin: 940px 0 0 0;
+    z-index: 80;
+    overflow:hidden;
+    filter: blur(2px) brightness(200%) opacity(100%);
+    background-position: 50% 50%;
+    box-shadow:  0 0 160px rgb(255, 30, 0);
+    border-radius: 100%;
+    border:2px dotted white;
+}
+#meteoro1{
+    background-color:white;
+    width:70px;
+    height:5px;
+    position:fixed;
+   
+    margin:60px 400px 0 30px;
+    transform: rotate(200deg);
+    border-radius:90%;
+
+
+}
+    
